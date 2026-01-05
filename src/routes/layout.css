@@ -1,0 +1,10 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+body {
+	@apply bg-black text-white;
+}
+
+.font-bruce-forever {
+	font-family: 'Bruce Forever', sans-serif;
+}

@@ -1,0 +1,1 @@
+<div class=" h-[36.04vw] max-w-[18.39vw] w-full bg-[url('https://quest-csv-images.s3.ca-central-1.amazonaws.com/dotpvp-dev/Images/leaderboard-bg.png')] bg-contain bg-center bg-no-repeat"><p></p></div>

@@ -1,0 +1,1 @@
+<div class="bg-[url('https://quest-csv-images.s3.ca-central-1.amazonaws.com/dotpvp-dev/statsandfeed-bg-min.png')] bg-contain h-full w-full bg-no-repeat"><p></p></div>
