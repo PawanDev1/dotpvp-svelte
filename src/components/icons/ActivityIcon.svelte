@@ -1,0 +1,23 @@
+<script lang="ts">
+	interface Props {
+		class?: string;
+	}
+
+	let { class: className = "" }: Props = $props();
+</script>
+
+<svg
+	class={className}
+	width="16"
+	height="16"
+	viewBox="0 0 16 16"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<!-- Placeholder icon - replace with actual ActivityIcon SVG -->
+	<path
+		d="M8 2L10 6L14 7L10 8L8 12L6 8L2 7L6 6L8 2Z"
+		fill="currentColor"
+	/>
+</svg>
+

@@ -8,3 +8,27 @@ body {
 .font-bruce-forever {
 	font-family: 'Bruce Forever', sans-serif;
 }
+
+/* Global scrollbar styling */
+.activity-scroll::-webkit-scrollbar {
+	width: 8px;
+}
+
+.activity-scroll::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.activity-scroll::-webkit-scrollbar-thumb {
+	background: #f8ee02;
+	border-radius: 4px;
+}
+
+.activity-scroll::-webkit-scrollbar-thumb:hover {
+	background: #e5d902;
+}
+
+/* Firefox */
+.activity-scroll {
+	scrollbar-width: thin;
+	scrollbar-color: #f8ee02 transparent;
+}
