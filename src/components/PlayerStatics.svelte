@@ -62,7 +62,7 @@
 	}
 </script>
 
-<div class="relative h-[50%] max-h-[20vw] p-[0.29vw]">
+<div class="relative h-[50%] max-h-[20vw] min-h-0 shrink p-[0.29vw]">
 	<img
 		src="https://quest-csv-images.s3.ca-central-1.amazonaws.com/dotpvp-dev/statsandfeed-bg-min.png"
 		class="absolute top-0 left-0 h-full w-full"

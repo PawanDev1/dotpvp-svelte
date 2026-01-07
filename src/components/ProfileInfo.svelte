@@ -230,7 +230,7 @@
 	}
 </script>
 
-<div class="relative flex h-[50%] max-h-[340px] w-full flex-col justify-between">
+<div class="relative flex h-[50%] max-h-[20vw] min-h-0 w-full shrink flex-col justify-between">
 	<img
 		src="https://quest-csv-images.s3.ca-central-1.amazonaws.com/dotpvp-dev/ProfileSection-bg-min.png"
 		alt="profile"
