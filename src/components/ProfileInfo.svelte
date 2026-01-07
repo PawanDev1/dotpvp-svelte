@@ -329,7 +329,7 @@
 				<div class="w-full">
 					<p class="text-[0.938vw] font-semibold text-[#ECE202]">Player Name</p>
 					<div
-						class="relative mt-[0.313vw] flex h-[1.823vw] w-full max-w-[207px] items-center justify-between gap-[0.625vw] border border-[#FDC700] bg-[#161616] pl-[0.625vw] placeholder:text-[#878787] {errors.name
+						class="relative mt-[0.313vw] flex h-[1.823vw] w-full max-w-[12vw] items-center justify-between gap-[0.625vw] border border-[#FDC700] bg-[#161616] pl-[0.625vw] placeholder:text-[#878787] {errors.name
 							? ' border-red-500 bg-red-100/10'
 							: ' border-[#4F4888]'}"
 					>
