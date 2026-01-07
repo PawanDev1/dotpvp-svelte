@@ -32,25 +32,25 @@
 	});
 </script>
 
-<div class="px-[18px] pt-[18px]">
+<div class="px-[1.06vw] pt-[1.06vw]">
 	<!-- Referral Cards -->
-	<div class="grid grid-cols-1 gap-x-[18px] gap-y-[12px]">
+	<div class="grid grid-cols-1 gap-x-[1.06vw] gap-y-[0.71vw]">
 		<StatCard
-			className="h-[53px]! flex justify-between"
+			className="h-[3.72vw]! flex justify-between"
 			label="Referral Link"
 			value={user?.referralCode ?? '------'}
 			isCopyable={true}
 			longImg={true}
 		/>
-		<div class="grid grid-cols-2 gap-x-[18px]">
+		<div class="grid grid-cols-2 gap-x-[1.06vw]">
 			<StatCard
-				className="h-[53px]!"
+				className="h-[3.72vw]!"
 				label="Total Referrals"
 				value={user ? `${user.referrals}` : '0'}
 				icon={ReferralsIcons}
 			/>
 			<StatCard
-				className="h-[53px]! flex justify-between"
+				className="h-[3.72vw]! flex justify-between"
 				label="Referral Earnings"
 				value={user ? `${user.referralEarnings}` : '0'}
 				icon={EarningIcons}
@@ -59,12 +59,14 @@
 
 		<div
 			style="background: url(https://quest-csv-images.s3.ca-central-1.amazonaws.com/dotpvp-dev/stats-bg-min.png); background-size: 100% 100%; background-position: center; background-repeat: no-repeat;"
-			class="relative flex h-[53px] items-center justify-between"
+			class="relative flex h-[3.72vw] items-center justify-between"
 		>
-			<div class="flex h-full w-full items-center justify-between gap-1 px-5">
-				<h2 class="font-bruce-forever flex items-center gap-2 text-base text-[#ECE202] uppercase">
+			<div class="flex h-full w-full items-center justify-between gap-[0.24vw] px-[1.18vw]">
+				<h2
+					class="font-bruce-forever flex items-center gap-[0.47vw] text-[0.94vw] text-[#ECE202] uppercase"
+				>
 					Airdrop Multiplier
-					<div
+					<!-- <div
 						class="relative cursor-pointer"
 						role="button"
 						tabindex="0"
@@ -75,18 +77,18 @@
 						{#if showTooltip}
 							{@const tooltipScale = scale + 0.4}
 							<div
-								class="pointer-events-none absolute bottom-full left-1/2 z-50 mb-1 max-w-[180px] -translate-x-1/2 px-3 py-1.5 text-[8px] text-white"
+								class="pointer-events-none absolute bottom-full left-1/2 z-50 mb-[0.24vw] max-w-[10.59vw] -translate-x-1/2 px-[0.71vw] py-[0.35vw] text-[0.47vw] text-white"
 								style="background: url(https://quest-csv-images.s3.ca-central-1.amazonaws.com/dotpvp-dev/fe_assets/tooltip-bg.png); background-size: 100% 100%; background-position: center; background-repeat: no-repeat; transform: scale({tooltipScale}); transform-origin: bottom;"
 							>
 								Each multiplier boost = more tokens in your victory chest!
 								<div
-									class="absolute top-full left-1/2 h-0 w-0 -translate-x-1/2 border-t-4 border-r-4 border-l-4 border-transparent border-t-[#C2B7F3]"
+									class="absolute top-full left-1/2 h-0 w-0 -translate-x-1/2 border-t-[0.94vw] border-r-[0.94vw] border-l-[0.94vw] border-transparent border-t-[#C2B7F3]"
 								></div>
 							</div>
 						{/if}
-					</div>
+					</div> -->
 				</h2>
-				<p class="font-bruce-forever text-center text-[26px] tracking-[1.8px] text-[#ECE202]">
+				<p class="font-bruce-forever text-center text-[1.53vw] tracking-[0.11vw] text-[#ECE202]">
 					x{user ? user?.multiplier?.toFixed(2) : Number(1).toFixed(2)}
 				</p>
 			</div>

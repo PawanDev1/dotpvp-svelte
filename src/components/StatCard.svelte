@@ -47,11 +47,11 @@
 	style="background: {longImg
 		? 'url(https://quest-csv-images.s3.ca-central-1.amazonaws.com/dotpvp-dev/stats-bg-min.png)'
 		: `url(${referralsSmallImg})`}; background-size: 100% 100%; background-position: center; background-repeat: no-repeat;"
-	class="relative h-[61px] w-full bg-[#878787] p-px {className}"
+	class="relative h-[3.59vw] w-full bg-[#878787] p-[0.06vw] {className}"
 >
-	<div class="flex h-full w-full items-center justify-between gap-1 px-5 py-2">
+	<div class="flex h-full w-full items-center justify-between gap-[0.24vw] px-[1.18vw] py-[0.47vw]">
 		<div class="relative flex flex-col justify-center">
-			<span class="text-sm font-bold text-[#FFF]">{label}</span>
+			<span class="text-[0.82vw] font-bold text-[#FFF]">{label}</span>
 			{#if isCopyable}
 				<button
 					type="button"
@@ -68,10 +68,10 @@
 			{#if showValueTooltip}
 				<div
 					style="background: url(/images/copy-bg-icon.png); background-size: 100% 100%; background-position: center; background-repeat: no-repeat;"
-					class="absolute top-1 bottom-full left-0 z-10 mb-2 flex h-[24px] w-[89px] items-center justify-center gap-1 text-xs font-medium whitespace-nowrap text-white"
+					class="absolute top-[0.24vw] bottom-full left-0 z-10 mb-[0.47vw] flex h-[1.41vw] w-[5.24vw] items-center justify-center gap-[0.24vw] text-[0.71vw] font-medium whitespace-nowrap text-white"
 				>
 					<CopyMsgIcon />
-					<span class="text-[10px] font-medium text-white"> Link Copied! </span>
+					<span class="text-[0.59vw] font-medium text-white"> Link Copied! </span>
 				</div>
 			{/if}
 		</div>
@@ -90,10 +90,10 @@
 				{#if showIconTooltip}
 					<div
 						style="background: url(/images/copy-bg-icon.png); background-size: 100% 100%; background-position: center; background-repeat: no-repeat;"
-						class="absolute -right-5 bottom-full z-10 mb-2 flex h-[24px] w-[89px] items-center justify-center gap-1 text-xs font-medium whitespace-nowrap text-white"
+						class="absolute -right-[1.18vw] bottom-full z-10 mb-[0.47vw] flex h-[1.41vw] w-[5.24vw] items-center justify-center gap-[0.24vw] text-[0.71vw] font-medium whitespace-nowrap text-white"
 					>
 						<CopyMsgIcon />
-						<span class="text-[10px] font-medium text-white"> Link Copied! </span>
+						<span class="text-[0.59vw] font-medium text-white"> Link Copied! </span>
 					</div>
 				{/if}
 			</div>

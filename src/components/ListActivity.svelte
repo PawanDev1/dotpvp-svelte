@@ -140,28 +140,32 @@
 	});
 </script>
 
-<div class="mx-[18px] mr-10 grid grid-cols-4 px-2 pt-[14px] pb-1.5 text-sm font-bold text-white">
-	<div class="-ml-1 text-left">User</div>
-	<div class="pr-10 text-right">Action</div>
-	<div class="pr-7 text-right">Amount</div>
+<div
+	class="mx-[1.06vw] mr-[2.35vw] grid grid-cols-4 px-[0.47vw] pt-[0.82vw] pb-[0.35vw] text-[0.82vw] font-bold text-white"
+>
+	<div class="-ml-[0.24vw] text-left">User</div>
+	<div class="pr-[2.35vw] text-right">Action</div>
+	<div class="pr-[1.65vw] text-right">Amount</div>
 	<div class="text-right">Time</div>
 </div>
 
 {#if activities.length > 0}
 	<div
 		bind:this={containerRef}
-		class="activity-scroll relative z-10 mr-5 max-h-[160px] overflow-y-scroll"
+		class="activity-scroll relative z-10 mr-[1.18vw] max-h-[10.71vw] overflow-y-scroll"
 		onscroll={handleScroll}
 	>
 		{#each activities as item, index (item._id)}
-			<div class="grid w-full grid-cols-4 py-[7px] pr-5 pl-5 text-xs font-medium">
+			<div
+				class="grid w-full grid-cols-4 py-[0.41vw] pr-[1.18vw] pl-[1.18vw] text-[0.71vw] font-medium"
+			>
 				<div class="text-left text-[#F6F6F6]">
 					{item.playerId?.name || 'N/A'}
 				</div>
-				<div class="pr-10 text-right text-[#FFEF00] uppercase">
+				<div class="pr-[2.35vw] text-right text-[#FFEF00] uppercase">
 					{item.finalStatus}
 				</div>
-				<div class="flex items-center justify-end gap-1 pr-7 text-[#F6F6F6]">
+				<div class="flex items-center justify-end gap-[0.24vw] pr-[1.65vw] text-[#F6F6F6]">
 					{(Math.floor((item.amount || 0) * 1000) / 1000).toFixed(3)}
 				</div>
 				<div class="text-right text-[#F6F6F6]">
@@ -171,13 +175,13 @@
 		{/each}
 	</div>
 {:else if loading}
-	<div class="flex h-[180px] animate-pulse flex-col justify-center gap-4 px-4">
+	<div class="flex h-[10.59vw] animate-pulse flex-col justify-center gap-[0.94vw] px-[0.94vw]">
 		{#each Array(5) as _, idx}
-			<div class="grid w-full grid-cols-4 gap-6">
-				<div class="h-4 rounded bg-[#4F4888]"></div>
-				<div class="h-4 rounded bg-[#4F4888]"></div>
-				<div class="h-4 rounded bg-[#4F4888]"></div>
-				<div class="h-4 rounded bg-[#4F4888]"></div>
+			<div class="grid w-full grid-cols-4 gap-[1.41vw]">
+				<div class="h-[0.94vw] rounded bg-[#4F4888]"></div>
+				<div class="h-[0.94vw] rounded bg-[#4F4888]"></div>
+				<div class="h-[0.94vw] rounded bg-[#4F4888]"></div>
+				<div class="h-[0.94vw] rounded bg-[#4F4888]"></div>
 			</div>
 		{/each}
 	</div>
